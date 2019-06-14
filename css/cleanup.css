@@ -1,1 +1,22 @@
 /* write your override styles here */
+#wall .tag-1 {
+  display:none;
+} /* Tag 1 */
+#wall .tag-1+#tag-2 {
+  display:none;
+} /* Tag 2 */
+#wall #tag-2+#tag-3.slick{
+  display:none;
+} /* Tag 3 */
+#wall .parent>#tag-4 {
+  display:none;
+} /* Tag 4 */
+#wall .parent #tag-5.slick:only-child {
+  display:none;
+} /* Tag 5 */
+#wall .parent div:last-child #tag-6:only-of-type{
+  display:none;
+} /* Tag 6 */
+#wall .parent div > #tag-7.slick:only-of-type {
+  display:none;
+} /* Tag 7 */ 
